@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Defines a function that takes a list of
 lists representing the keys of each box
