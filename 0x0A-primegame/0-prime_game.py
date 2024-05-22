@@ -5,14 +5,6 @@
 def isWinner(x, nums):
     '''
     Determine the winnder of a prime number game.
-
-    Parameters:
-    x(int): The number of rounds of the game.
-    nums (list of int): The maximum number of each round.
-
-    Returns:
-    str: The name of the player who wins the most rounds,
-    or None if there is a tie.
     '''
     def is_prime(n):
         '''
