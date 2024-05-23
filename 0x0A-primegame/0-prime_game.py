@@ -33,8 +33,8 @@ def isWinner(x, nums):
         Returns:
         bool: True if Maria wins this round, False if Ben wins.
         '''
-        primes = [is_prime(i) for i in range(n+1)]
-        return sum(primes) % 2 == 1
+        primes = [i for i in range(2, n+1) if is_prime(i)]
+        return len(primes) % 2 == 1
 
     Maria_wins = sum(game(n) for n in nums)
     Ben_wins = x - Maria_wins
